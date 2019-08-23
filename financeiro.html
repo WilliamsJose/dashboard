@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>VMS-Sistemas</title>
+  <meta content="Williams--VMS-Sistemas" name="author">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/3.3.7/css/bootstrap.min.css" /> 
+  <!-- Gridstack css -->
+  <link rel="stylesheet" href="bower_components/gridstack/css/gridstack.css"/>  
+  <link rel="stylesheet" href="bower_components/gridstack/css/gridstack-extra.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font_awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- page css -->
+  <link rel="stylesheet" href="dist/css/financeiro.css">
+  
+  <!-- JQuery js -->
+  <script src="bower_components/jquery/3.3.1/jquery-3.3.1.min.js"></script> 
+  <!-- JQuery UI js -->
+  <script src="bower_components/jquery/UI_1.12.1/jquery-ui.min.js"></script> 
+  <!-- acessibilidade à touch -->
+  <script src="bower_components/jquery/UI_1.12.1/jquery.ui.touch-punch.min.js"></script> 
+  <!-- Bootstrap js -->
+  <script src="bower_components/bootstrap/dist/3.3.7/js/bootstrap.min.js"></script> 
+  <!-- Lodash js -->
+  <script src="bower_components/lodash/lodash.min.js"></script> 
+  <!-- Gridstack js --> 
+  <script src="bower_components/gridstack/js/gridstack.js"></script> 
+  <script src="bower_components/gridstack/js/gridstack.jQueryUI.js"></script>
+  <!-- Chartjs -->
+  <script src="bower_components/chart_js/chart_2.7.3.min.js"></script> 
+  <script src="bower_components/chart_js/utils.js"></script>
+  <!-- Select2 -->
+  <link rel="stylesheet" href="bower_components/select2/css/select2.min.css" />
+  <script src="bower_components/select2/js/select2.min.js"></script>   
+
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+<div class="wrapper">
+  <header class="main-header">
+    
+    <!-- Logo -->
+    <a href="index.html" id="nav-logo" class="logo bg-nav-logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">VMS</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>VMS</b>-Sistemas</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" id="nav-top" role="navigation">
+
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="dist/img/homem-barba.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">emailusuario@email.com.br</span>
+            </a>
+            <ul class="dropdown-menu">
+              
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="dist/img/homem-barba.jpg" class="img-circle" alt="User Image">
+                <p>
+                  Williams - Web Developer
+                  <small type="email">emailusuario@email.com.br</small>
+                </p>
+              </li>
+
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Alterar Senha</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sair</a>
+                </div>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside id="nav-side" class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left img mostra" style="display: none;">
+          <img src="dist/img/logo_mobo.png" class="mini-logo-side" alt="Mini logo da empresa">
+        </div>
+        <div class="pull-left img" style="display: none;">
+          <img src="dist/img/logo_menu.png" class="logo-side" alt="Logo da empresa">
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">Menu</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
+        <li class="treeview active">
+          <a href="#"><i class="fa fa-pie-chart"></i> <span>Dashboards <span class="badge bg-purple">2</span></span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="financeiro.html">Financeiro</a></li>
+            <li><a href="#">Geral</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#"><i class="fa fa-play-circle"></i> <span>Dashboards Slideshow</span></a></li>
+        <li><a href="#"><i class="fa fa-file-text-o"></i> <span>Gerenciar Páginas</span></a></li>
+
+        <li class="treeview">
+          <a href="#"><i class="fa fa-user"></i> <span>Usuários</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Gerenciar</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#"><i class="fa fa-pie-chart"></i> <span>Widgets</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Gerenciar</a></li>
+          </ul>
+        </li>
+        
+        <li class="treeview">
+          <a href="#"><i class="fa fa-indent"></i> <span>Categorias</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Gerenciar</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#"><i class="fa fa-briefcase"></i> <span>Empresa</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="configuracoes.html">Configurações</a></li>
+            <li><a href="#">Informações</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#"><i class="fa fa-question"></i> <span>FAQ</span></a></li>
+        <li><a href="contato.html"><i class="fa fa-envelope-o"></i> <span>Contato</span></a></li>
+      </ul>
+
+    </section>
+  </aside>
+
+  <!-- page content -->
+  <div class="content-wrapper">
+    <section class="content-header">
+      <ol class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-dashboard"></i> Página inicial</a></li>
+        <li class="active">Dashboards</li>
+        <li class="active">Financeiro</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content" style="padding:27px 15px 120px 15px;">
+      <main>
+        <div class="row">
+          <!-- header -->
+          <div class="header">
+            <div class="col-xs-12 col-sm-4 col-lg-2">
+              <button id="add-new-widget" class="btn btn-md btn-success">Add New Widget</button>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-2">
+              <button type="submit" id="salvar-widgets" class="btn btn-md btn-success">Salvar Alterações</button>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-3">                
+              <select name="select-widgets" class="form-control select-style" id="selecionar-widgets" style="width:100% !important;">
+                <option value="0" selected="selected">Selecione seus Widgets</option>
+                
+                <optgroup label="Compras">
+                  <option value="1">Maiores pedidos de compras</option>
+                </optgroup>
+                
+                <optgroup label="Desenvolvimento">
+                  <option value="2">Gráfico em Linhas - Horas Extras</option>
+                </optgroup>
+
+                <optgroup label="Financeiro">
+                  <option value="3">Contas a Pagar - Maiores fornecedores - Baixas</option>
+                  <option value="4">Contas a Pagar - Maiores fornecedores - Emissões</option>
+                  <option value="5">Contas a Pagar - Maiores fornecedores - Vencimentos</option>
+                  <option value="6">Contas a Pagar Diário - Emissões vs Vencimentos vs Baixas</option>
+                  <option value="7">Contas a Receber - Maiores Clientes - Baixas</option>
+                  <option value="8">Contas a Receber - Maiores Clientes - Emissões</option>
+                  <option value="9">Contas a Receber - Maiores Clientes - Vencimentos</option>
+                  <option value="10">Contas a Receber - Títulos Vencidos</option>
+                  <option value="11">Contas a Receber Diário - Emissões vs Vencimentos vs Baixas</option>
+                  <option value="12">Fluxo de Caixa Orçado Mensal</option>
+                  <option value="13">Fluxo de Caixa Realizado Mensal</option>
+                  <option value="14">Maiores Clientes Devedores</option>
+                </optgroup>
+
+                <optgroup label="Gestão de Pessoal">
+                  <option value="15">Comparativo de Verbas</option>
+                  <option value="16">Férias Vencidas</option>
+                  <option value="17">Gastos com Horas Extras</option>
+                  <option value="18">Maiores Salários por Centro de Custo</option>
+                  <option value="19">Turnover (Admissões vs Demissões)</option>
+                  <option value="20">Turnover (Admissões vs Demissões) - por Centro de Custo</option>
+                </optgroup>
+
+                <optgroup label="Gestão de Pessoal RM">
+                  <option value="21">Horas Extras</option>
+                </optgroup>
+
+                <optgroup label="Gestão de Serviços">
+                  <option value="22">Inconsistências nas OSs</option>
+                  <option value="23">Ranking de Colaboradores</option>
+                  <option value="24">Relatório de Serviços</option>
+                  <option value="25">Resumo de Produção</option>
+                  <option value="26">Resumo de Produção - Gráfico em Barras</option>
+                  <option value="27">Resumo de Produção - Gráfico em Rosca</option>
+                  <option value="27">Resumo de Produção - Gráfico Geral</option>
+                  <option value="28">Serviços vs Meta</option>
+                  <option value="29">Tempo de Status</option>
+                </optgroup>
+
+                <optgroup label="Gestão de Transportes">
+                  <option value="30">Documentos com Atraso de Entrega</option>
+                  <option value="31">Documentos de Transporte - Coletas Emitidas vs Realizadas</option>
+                  <option value="32">Documentos de Transporte - Emissões vs Entregas vs Atrasos</option>
+                  <option value="33">Maiores Clientes não Faturados</option>
+                </optgroup>
+              </select>
+            </div>
+          </div> <!-- /header -->
+        </div> <!-- row -->
+
+        <div class="row">
+          <div class="col-xs-12">
+            <!-- content -->
+            <div id="content" style="margin-top:15px;">
+              <div class="grid-stack"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- /.Main content -->
+  </div> <!-- /.content-wrapper -->
+</div> <!-- ./wrapper -->
+
+
+<!-- modal mudar titulo box -->
+<div id="title-box" class="modal" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3 id="title-modal">Nome:</h3>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="titulo form-control">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-sm btn-danger" data-dismiss="modal">Cancelar</button>
+        <button class="btn btn-sm btn-success" data-dismiss="modal" id="confirm-title">Confirmar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <script src="dist/js/financeiro.js"></script>
+  <script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>

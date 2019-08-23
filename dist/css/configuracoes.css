@@ -1,0 +1,112 @@
+/* layout */
+/* logo sidebar */
+.img{
+    width: 100%;
+    height: auto;
+}
+.mini-logo-side{
+    max-width: 30px;
+}
+.logo-side{
+    max-width: 200px;
+}
+.mostra{
+    display: block !important;
+}
+/* /logo sidebar */
+
+.content{
+   min-width: 296px;
+}
+
+.box{
+   overflow: hidden;
+}
+
+.color-holder{
+   padding: 0;
+   text-align: center;
+   text-align: -moz-center;
+}
+
+.form-color{
+   text-align: center;
+   width: 100%;
+   height: 90px;
+   max-width: 570px;
+   min-width: 155px;
+}
+
+.form-group{
+   max-width: 570px;
+   min-width: 155px;
+}
+
+.form-control{
+   height: 40px;
+   border-radius: 5px;
+}
+
+.colorCanvasInput{
+   width: 100%;
+   height: 40px;
+   border: 1px dashed black;
+   border-radius: 5px;
+}
+
+.box-body{
+   text-align: center;
+   text-align: -moz-center;
+}
+
+.select2-container{
+   width: 100% !important;
+}
+
+.nav-tabs li{
+   transition: all .5s;
+}
+/* /layout */
+
+/* insert logo buttons */
+input[type="file"] {
+   display: none;
+}
+
+.insert-logo{
+   background: rgb(167, 173, 255);
+   padding: 5px;
+   color: rgb(235, 235, 235);
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all .2s;
+}
+
+.insert-logo:hover{
+   box-shadow: 1px 1px 2px darkgreen;
+   transition: all .2s;
+}
+
+#file-name, #mini-file-name{
+   display: block;
+   color: rgb(0, 0, 0); 
+   font-size: 13px; 
+   font-weight: 400;
+   font-style: italic;
+   letter-spacing: 1px;
+   overflow: hidden;
+}
+/* /insert logo buttons */
+
+/* save button */
+#saveLayout, #saveERP{
+   box-shadow: none;
+   transition: all .2s;
+}
+
+#saveLayout:hover, #saveERP:hover{
+   box-shadow: inset 0 0 2px darkgreen;
+   transition: all .2s;
+}
+/* /save button */
+

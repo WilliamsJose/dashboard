@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>VMS-Sistemas</title>
+  <meta content="Williams--VMS-Sistemas" name="author">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/3.3.7/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font_awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- jquery js -->
+  <script src="bower_components/jquery/3.3.1/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="bower_components/bootstrap/dist/3.3.7/js/bootstrap.min.js"></script>
+  <!-- color canvas css & js -->
+  <link rel="stylesheet" href="bower_components/color_canvas/styles.css">
+  <script src="bower_components/color_canvas/colorcanvas.min.js"></script>
+  <script src="bower_components/color_canvas/colorcanvas.input.min.js"></script>
+  <!-- select2 css & js -->
+  <link rel="stylesheet" href="bower_components/select2/css/select2.min.css">
+  <script src="bower_components/select2/js/select2.min.js"></script>
+  <!-- page css -->
+  <link rel="stylesheet" href="dist/css/configuracoes.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="hold-transition sidebar-mini sidebar-collapse skin-blue">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a id="nav-logo" href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">VMS</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>VMS</b>-Sistemas</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav id="nav-top" class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="bower_components/img/homem-barba.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">emailusuario@email.com.br</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="bower_components/img/homem-barba.jpg" class="img-circle" alt="User Image">
+                <p>
+                  Williams José - Web Developer
+                  <small type="email">emailusuario@email.com.br</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Alterar Senha</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sair</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside id="nav-side" class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left img mostra" style="display: none;">
+          <img src="dist/img/logo_mobo.png" class="mini-logo-side" alt="Mini logo da empresa">
+        </div>
+        <div class="pull-left img" style="display: none;">
+          <img src="dist/img/logo_menu.png" class="logo-side" alt="Logo da empresa">
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">Menu</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li><a class="asideLinks" href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
+        
+        <li class="treeview">
+          <a class="asideLinks" href="#"><i class="fa fa-pie-chart"></i> <span>Dashboards <span class="badge bg-purple">2</span></span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a class="asideLinks" href="financeiro.html">Financeiro</a></li>
+            <li><a class="asideLinks" href="#">Geral</a></li>
+          </ul>
+        </li>
+
+        <li><a class="asideLinks" href="#"><i class="fa fa-play-circle"></i> <span>Dashboards Slideshow</span></a></li>
+        <li><a class="asideLinks" href="#"><i class="fa fa-file-text-o"></i> <span>Gerenciar Páginas</span></a></li>
+
+        <li class="treeview">
+          <a class="asideLinks" href="#"><i class="fa fa-user"></i> <span>Usuários</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a class="asideLinks" href="#">Cadastrar</a></li>
+            <li><a class="asideLinks" href="#">Gerenciar</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a class="asideLinks" href="#"><i class="fa fa-pie-chart"></i> <span>Widgets</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a class="asideLinks" href="#">Cadastrar</a></li>
+            <li><a class="asideLinks" href="#">Gerenciar</a></li>
+          </ul>
+        </li>
+        
+        <li class="treeview">
+          <a class="asideLinks" href="#"><i class="fa fa-indent"></i> <span>Categorias</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a class="asideLinks" href="#">Cadastrar</a></li>
+            <li><a class="asideLinks" href="#">Gerenciar</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview active">
+          <a class="asideLinks" href="#"><i class="fa fa-briefcase"></i> <span>Empresa</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a class="asideLinks" href="configuracoes.html">Configurações</a></li>
+            <li><a class="asideLinks" href="#">Informações</a></li>
+          </ul>
+        </li>
+
+        <li><a class="asideLinks" href="#"><i class="fa fa-question"></i> <span>FAQ</span></a></li>
+        <li><a class="asideLinks" href="contato.html"><i class="fa fa-envelope-o"></i> <span>Contato</span></a></li>
+
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <ol class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-dashboard"></i> Página inicial</a></li>
+        <li class="active">Empresa</li>
+        <li class="active">Configurações da Empresa</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <main>
+        <h3>Configurações da Empresa</h3>
+        <form id="formConfigLayout" method="POST" enctype="multipart/form-data">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <div class="box-header with-border text-center">
+                  <h3 class="box-title">Configurações de Layout</h3>
+                </div>
+                
+                <div class="box-body">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="nav-tabs-custom">
+                        <ul class="nav nav-tabs">
+                          <li class="active"><a data-toggle="tab" aria-expanded="true" href="#templates">Templates</a></li>
+                          <li class=""><a data-toggle="tab" aria-expanded="false" href="#personalize">Personalizar</a></li>
+                        </ul>
+                        <!-- content -->
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="templates">
+                            <div class="form-group">
+                              <label class="control-label" for="configuracoes_Template">Template</label>
+                              <select id="select-template" class="form-control selectStyle" name="configuracoes_Template" aria-required="false">
+                                <option value="0"></option>
+                                <option value="skin-black">Black</option>
+                                <option value="skin-black-light">Black Light</option>
+                                <option value="skin-blue" selected="">Blue</option>
+                                <option value="skin-blue-light">Blue Light</option>
+                                <option value="skin-green">Green</option>
+                                <option value="skin-green-light">Green Light</option>
+                                <option value="skin-purple">Purple</option>
+                                <option value="skin-purple-light">Purple Light</option>
+                                <option value="skin-red">Red</option>
+                                <option value="skin-red-light">Red Light</option>
+                                <option value="skin-yellow">Yellow</option>
+                                <option value="skin-yellow-light">Yellow Light</option>
+                              </select>
+
+                              <div class="help"></div>
+                            </div>
+                          </div>
+                          <!-- content -->
+                          <div class="tab-pane" id="personalize">
+                            <div class="row">
+                              <!-- input bg do topo -->
+                              <div class="col-xs-12 col-sm-4">
+                                <div class="form-color">
+                                  <label class="control-label" for="color-nav-top">Cor de fundo topo</label>
+                                  <input id="color-nav-top" type="color">
+                                </div>
+                              </div>
+                              <!-- input bg do Menu -->
+                              <div class="col-xs-12 col-sm-4">              
+                                <div class="form-color">
+                                  <label class="control-label" for="color-nav-side">Cor de fundo Menu</label>
+                                  <input id="color-nav-side" type="color">
+                                </div>
+                              </div>
+                              <!-- input cor do texto do menu -->
+                              <div class="col-xs-12 col-sm-4">
+                                <div class="form-color">
+                                  <label class="control-label" for="color-nav-logo">Cor do texto do menu</label>
+                                  <input id="color-nav-logo" type="color">
+                                </div>
+                              </div>
+                            </div>
+                          </div> <!-- tab-pane -->
+                        </div> <!-- /tab-content -->
+                      </div> <!-- /nav-tabs-custom -->
+                    </div> <!-- /col-xs-12 -->
+                  </div> <!-- /row -->
+                </div> <!-- /box-body -->
+
+                <div class="box-footer">
+                  <div class="row">
+                    <div class="form-group col-xs-12 col-sm-4 col-md-3 col-lg-2 pull-right">
+                      <button id="saveLayout" type="button" class="btn btn-success col-xs-12">Salvar Configurações</button>
+                    </div>
+                  </div>
+                </div> <!-- /box-footer -->
+              </div> <!-- /box -->
+            </div> <!-- col -->
+          </div> <!-- row -->
+        </form>
+
+        <form id="formConfigERP" method="POST" enctype="multipart/form-data">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border text-center">
+                  <h3 class="box-title">Comunicação com o ERP</h3>
+                </div>
+                
+                <div class="box-body">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <div class="form-group">
+                        <label class="control-label" for="configuracoes_Token">Token</label>
+                        <input type="text" class="form-control" name="configuracoes_Token" value="123456" readonly="readonly" aria-required="true" required>
+
+                        <div class="help"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <div class="form-group">
+                        <label class="control-label" for="configuracoes_wsUrl">Url do Webservice</label>
+                        <input type="text" class="form-control" name="configuracoes_wsUrl" value="http://opa.site.com.br:8080/resth/" aria-required="true" required>
+
+                        <div class="help"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <div class="form-group">
+                        <label class="control-label" for="configuracoes_wsType">Tipo de Webservice</label>
+                        <select class="form-control selectStyle" name="configuracoes_wsType" aria-required="true" required>
+                          <option value=""></option>
+                          <option value="1">REST GET</option>
+                          <option value="2">REST POST</option>
+                          <option value="3">SOAP</option>
+                        </select>
+
+                        <div class="help"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <div class="form-group">
+                        <label class="control-label" for="configuracoes_inputAuth">Autenticação obrigatória?</label>
+                        <select class="form-control selectStyle" name="configuracoes_inputAuth" aria-required="true" required>
+                          <option value=""></option>
+                          <option value="1">Sim</option>
+                          <option value="2">Não</option>
+                        </select>
+
+                        <div class="help"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <div class="form-group">
+                        <label class="control-label" for="configuracoes_inputUser">Usuário para autenticação</label>
+                        <input type="text" class="form-control" name="configuracoes_inputUser" value="" required>
+
+                        <div class="help"></div>
+                      </div>    	
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <div class="form-group">
+                        <label class="control-label" for="configuracoes_inputPass">Senha para autenticação</label>
+                        <input type="password" class="form-control" name="configuracoes_inputPass" value="" required>
+
+                        <div class="help"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <div class="form-group">
+                        <label class="control-label insert-logo col-xs-12" for="configuracoes_logoFile">Logotipo (210x60)<div id="file-name">Nenhum arquivo selecionado...</div></label>
+                        <input type="file" id="configuracoes_logoFile" name="configuracoes_logoFile">
+
+                        <div class="help"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <div class="form-group">
+                        <label class="control-label insert-logo col-xs-12" for="configuracoes_logoMiniFile">Logotipo Mini (30x30)<div id="mini-file-name">Nenhum arquivo selecionado...</div></label>
+                        <input type="file" id="configuracoes_logoMiniFile" name="configuracoes_logoMiniFile">
+                        
+                        <div class="help"></div>
+                      </div>
+                    </div>
+                  </div> <!-- row -->
+                </div> <!-- /box-body -->
+                
+                <div class="box-footer">
+                  <div class="row">
+                    <div class="form-group col-xs-12 col-sm-4 col-md-3 col-lg-2 pull-right">
+                      <button id="saveERP" type="submit" class="btn btn-success col-xs-12">Salvar Configurações</button>
+                    </div>
+                  </div>
+                </div> <!-- /box-footer -->
+              </div> <!-- /box -->
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+        </form>
+      </main>
+    </section> <!-- /.content -->
+  </div> <!-- /.content-wrapper -->
+</div> <!-- ./wrapper -->
+
+  <!-- page js -->
+  <script src="dist/js/configuracoes.js"></script>
+  <!-- AdminLTE js -->
+  <script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>

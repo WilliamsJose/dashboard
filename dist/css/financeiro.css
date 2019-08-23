@@ -1,0 +1,205 @@
+.grid-stack-item-content {
+    color: #2c3e50;
+    text-align: center;
+    background-color: #18bc9c;
+}
+
+/* logo sidebar */
+.img{
+    width: 100%;
+    height: auto;
+}
+.mini-logo-side{
+    max-width: 30px;
+}
+.logo-side{
+    max-width: 200px;
+}
+.mostra{
+    display: block !important;
+}
+/* /logo sidebar */
+
+.content .header{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.content .header button{
+    width: 100%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* select2 */
+/* combo geral da pagina */
+.select-style{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.select2-container--default .select2-selection--single {
+	height: 34px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	margin-top: -7px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 32px !important;
+}
+/* combo dos boxs */
+.prefer .ss{
+    width: 85% !important;
+    border-radius: 3px;
+	height: 30px;
+	border: none;
+	-webkit-appearance: none;
+	background-image: url(https://img.icons8.com/ios-glyphs/30/000000/sort-down.png);
+    background-color: #fff;
+	background-size: 12px;
+	background-repeat: no-repeat;
+	background-position: center right 5px;
+	box-shadow: 1px 1px 0px 2px;
+	padding-left: 10px;
+	letter-spacing: 1px;
+}
+/* /select2 */
+
+.widgetName{
+    float: left;
+    font-size: 1.2em;
+}
+
+.icons{
+    color: white !important;
+    margin-left: 10px;
+    float: right;
+    font-size: 1.5em;
+}
+
+.panel-heading div div div{
+    display: inline-block;
+}
+
+.box{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    border: none;
+}
+
+.box-header{
+    flex: 0 1 42px;
+    background: #367fa9;
+    padding-top: 12px;
+    cursor: move;
+}
+.box-header .box-title{
+    float: left;
+    color: #fff;
+    font-size: 1.1em;
+}
+.box-header .change-title{
+    float: left;
+    margin-top: -8px;
+    height: 25px;
+}
+.box-header .btn-box-tool{
+    color: #fff;
+    font-size: 1em;
+}
+.box-header .btn-box-tool:hover{
+    color: #c9c9c9;
+}
+.box-header .btn-box-tool:focus{
+    color: #c9c9c9;
+}
+.box-header > .box-tools{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.prefer{
+	position: absolute;
+	right: -47px;
+	top: 40px;
+	background: #367fa9;
+	width: 194px;
+	list-style: none;
+	margin: 0;
+	padding: 15px;
+	height: auto;
+	border-radius: 5px;
+    text-align: left;
+}
+.collapsing {
+    -webkit-transition: linear .2s;
+    -o-transition: linear .2s;
+    transition: linear .2s;
+}
+.prefer > ul{
+	width: auto;
+	margin: 0px;
+	padding: 10px 0px;
+	list-style: none;
+	border-top: 1px solid white;
+	border-bottom: 2px solid white;
+    text-align: center;
+    border-radius: 4px;
+}
+.prefer a{
+    color: rgba(255, 255, 255, 0.8);
+    transition: all .2s;
+}
+.prefer a:hover{
+    color: rgb(100, 248, 125);
+    transition: all .2s;
+}
+.prefer > li{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: transparent;
+	cursor: pointer;
+	color: cornsilk;
+    padding: 5px;
+    transition: all .2s;
+}
+.prefer > ul > li{
+    display: inline-block;
+    margin: 2px;
+}
+
+.box-body{
+    flex: 1 1 auto;
+    height: 65%;
+}
+.box-body .changeDoughnut{
+    display: none;
+	position: absolute;
+	top: 55px;
+	left: 10px;
+}
+
+.box-footer{
+    flex: 0 1 40px;
+}
+
+.modal-backdrop{
+    z-index: -1;
+}
+.modal-dialog{
+    top: 25%;
+}
+.modal-content{
+    border-radius: 5px;
+}
+/* label do options do box */
+.gls{
+    display: block;
+    font-weight: 600;
+    color: #fff;
+}

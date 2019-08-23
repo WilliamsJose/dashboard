@@ -1,0 +1,15 @@
+/* logo sidebar */
+.img{
+    width: 100%;
+    height: auto;
+}
+.mini-logo-side{
+    max-width: 30px;
+}
+.logo-side{
+    max-width: 200px;
+}
+.mostra{
+    display: block !important;
+}
+/* /logo sidebar */
